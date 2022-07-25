@@ -1,0 +1,18 @@
+@charset "UTF-8";
+/* COMMON */
+* {
+ margin: 0px;
+ padding: 0px;
+ box-sizing: border-box;
+}
+ul,
+ol {
+ list-style: none;
+}
+a {
+ text-decoration: none;
+ color: #555;
+}
+a:visited {
+ color: #555;
+}
