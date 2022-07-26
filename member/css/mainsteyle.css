@@ -1,0 +1,199 @@
+@charset "UTF-8";
+
+/* 손글씨 Dancing Script , 그 외 폰트 Mochiy Pop One , Lobster ,Playfair Display */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Edu+VIC+WA+NT+Beginner:wght@400;600&family=Lobster&family=Mochiy+Pop+One&family=Playfair+Display:wght@500&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+ul,ol{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+/* header */
+header{
+    position: relative;
+    display: flex;
+    width: 100%;
+    border-bottom: 60px solid rgba(255, 255, 255, 0.393);
+    justify-content: space-between;
+    padding: 5vw 5vh;
+    align-items: center;
+    z-index: 2;
+}
+
+header .btn_manu{
+    display: none;
+}
+
+header h1 a{
+    font: bold 210px/1 "Lobster";
+    color: rgba(255, 255, 255, 0.637);
+}
+
+
+header #sub .sub_menu{
+    position: absolute;
+    right: 5vw;
+    padding: 10px 25px;
+    background-color: rgb(0, 53, 0);
+    border: 1px solid #fff;
+    border-radius: 10px;
+    text-align: right;
+    opacity: 1;
+    transition: 0.4s;
+}
+
+header #sub .sub_menu li{
+    padding: 10px 0px;
+    font: 50px/1 "Lobster";
+    color: #fff;
+}
+
+header #sub .sub_menu.hide{
+    opacity: 0;
+}
+
+header #sub .sub_menu a{
+    color: #fff;
+}
+
+header #sub .sub_menu a i{
+    margin-left: 8px;
+}
+
+/*gnb*/
+
+header #gnb {
+     display: flex;
+    }
+    
+
+header #gnb li{
+    margin: 0px 40px;
+}
+
+header #gnb li a{
+    font: bold 100px/1 "Dancing Script";
+    color: rgba(255, 255, 255, 0.522);
+    letter-spacing: 1px;
+    margin: 100px;
+
+}
+
+/*sns*/
+
+header .sns{
+    display: flex;
+}
+
+header .sns li{
+    margin: 0px 10px;
+}
+
+header .sns li a{
+    color: rgba(255, 255, 255, 0.834);
+    font-size: 70px;
+    padding: 50px;
+
+}
+
+/* vedio */
+
+figure{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
+    z-index: 1;
+}
+
+figure video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+figure .text{
+    position: absolute;
+    left: 3vw;
+    top: 20%;
+    transform: translate(0,50%);
+}
+
+figure .text p{
+    font: normal 8vw/1 "Lobster";
+    color: aliceblue;
+}
+
+figure .text ul{
+    display: flex;
+    margin-top: 80px;
+    font-size: 50px;
+    
+}
+
+figure .text ul li {
+    margin: 0px 80px;
+}
+
+figure .text ul li i{
+    font-size: 70px;
+    color: aliceblue;
+    margin-right: 10px;
+}
+
+figure .text ul li strong{
+    font: 70px/1 "Dancing Script";
+    color: aliceblue;
+    letter-spacing: 1px;
+}
+
+/* footer */
+
+footer{
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    font: 85px/1 "Dancing Script";
+    color: rgba(255, 255, 255, 0.779);
+    letter-spacing: 2px;
+    text-align: center;
+    padding: 5vh 5vw;
+    z-index: 2;
+}
+
+/* mobile */
+
+@media screen and (max-width: 2500px) {
+    header #gnb{
+        display: none;
+    }
+    header .sns{
+        display: none;
+    }
+
+    header #sub{
+        display: block;
+        color: #fff;
+    }
+
+
+    header .btn_menu{
+        display: block;
+    }
+    figure .text p{
+        font-size: 15vw;
+    }
+}
